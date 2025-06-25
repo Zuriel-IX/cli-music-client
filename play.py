@@ -182,9 +182,6 @@ def cli():
     print()
     conn.commit()
     conn.close()
-    send_to_mpv({
-        "command": ["loadfile", "/songs/sickness-for-nothing.mp3", "append-play"]
-    })
 
 cli.add_command(download)
 cli.add_command(ls)
